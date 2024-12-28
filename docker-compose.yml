@@ -6,7 +6,7 @@ x-web-defaults: &web-defaults
     context: backend
     dockerfile: 'Dockerfile'
   volumes:
-    - ./backend:/app
+    - ./backend:/backend
     - ./frontend:/frontend
   depends_on:
     - redis
